@@ -1,0 +1,3 @@
+#!/bin/sh
+
+exec chpst -u munin /usr/local/bin/munin-httpd --listen ${MUNIN_HTTPD_HOST}:${MUNIN_HTTPD_PORT} --stdout
